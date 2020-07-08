@@ -5,6 +5,7 @@ pipeline {
       agent any
       steps {
         git(url: 'https://github.com/GCP111093/Cucumber_Framework.git', branch: 'CICD')
+        sh 'mvn compile'
       }
     }
 
