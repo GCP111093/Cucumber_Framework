@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        bat 'mvn clean'
+        bat 'C:\\Users\\gcp111093\\Downloads\\apache-maven-3.6.3\\bin\\mvn clean'
       }
     }
 
