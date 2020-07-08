@@ -4,7 +4,12 @@ pipeline {
     stage('Compile') {
       steps {
         bat 'run.bat'
-        bat 'mvn --version'
+      }
+    }
+
+    stage('Sanity API') {
+      steps {
+        bat 'sanity-api.bat'
       }
     }
 
