@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Report') {
+      steps {
+        realtimeJUnit(testResults: '/target/cucumber.xml')
+      }
+    }
+
   }
 }
