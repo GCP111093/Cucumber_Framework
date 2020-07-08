@@ -1,7 +1,5 @@
 package com.cucumber;
 
-
-import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -28,8 +26,7 @@ import io.cucumber.testng.CucumberOptions;
 
 public class RunCucumberTest extends AbstractTestNGCucumberTests{
 	
-	private static Logger Log = Logger.getLogger(RunCucumberTest.class.getName());
-
+	
 	UserActions User ;
 	public RunCucumberTest() {
 		
@@ -41,13 +38,13 @@ public class RunCucumberTest extends AbstractTestNGCucumberTests{
 	
 	@BeforeMethod
 	public void beforeMethod(ITestContext context) {
-		Log.info("New Test Initiated Before Method");
+	//	Log.info("New Test Initiated Before Method");
 		
 	}
 
 	@AfterMethod
 	public void afterMethod(ITestContext context) {
-		Log.info("New Test Initiated After Method");
+	//	Log.info("New Test Initiated After Method");
 	}
 
 	@AfterSuite

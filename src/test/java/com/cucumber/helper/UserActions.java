@@ -1,6 +1,5 @@
 package com.cucumber.helper;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -17,8 +16,7 @@ import io.cucumber.java.Scenario;
 
 public class UserActions {
 
-	private static Logger Log = Logger.getLogger(UserActions.class.getName());
-
+	
 	WebDriver driver;
 	TestData Data = new TestData();
 	String applicationType = null;
@@ -53,12 +51,12 @@ public class UserActions {
 	}
 
 	public void LaunchBrowser(BrowserType browser) {
-		Log.info("Launching Browser");
+		//Log.info("Launching Browser");
 		driver = new DriverManager(browser).getDriver();
 	}
 
 	public void OpenUrl(String URL) {
-		Log.info("Application URL :" + URL);
+		//Log.info("Application URL :" + URL);
 		driver.get(URL);
 	}
 
@@ -66,9 +64,9 @@ public class UserActions {
 		try {
 			byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 			scenario.embed(screenshot, "image/png", text + " Screenshot");
-			Log.info("Captured Screenshot");
+		//	Log.info("Captured Screenshot");
 		} catch (WebDriverException e) {
-			Log.error(e.getMessage());
+		//	Log.error(e.getMessage());
 			System.err.println(e.getMessage());
 
 		}

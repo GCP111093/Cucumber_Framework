@@ -1,12 +1,10 @@
 package com.cucumber.stepdefinitions;
 
 import java.util.Hashtable;
-import org.apache.log4j.Logger;
 import com.cucumber.helper.UserActions;
 import io.cucumber.java.en.Given;
 
 public class LoginSteps {
-	private static Logger Log = Logger.getLogger(UserActions.class.getName());
 
 	UserActions User;
 	Hashtable<String,String> Data;
@@ -20,7 +18,7 @@ public class LoginSteps {
 		//User.OpenUrl(URL);
 		User.setI(1);
 		System.out.println("LaunchBrowser "+User.getI());
-		Log.info("Application is launched with URL");
+//		Log.info("Application is launched with URL");
 	}
 
 	

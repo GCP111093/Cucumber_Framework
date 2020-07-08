@@ -2,8 +2,6 @@ package com.cucumber.stepdefinitions;
 
 import java.util.Hashtable;
 
-import org.apache.log4j.Logger;
-
 import com.cucumber.helper.UserActions;
 
 import io.cucumber.java.en.And;
@@ -11,7 +9,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SearchSteps {
-	private static Logger Log = Logger.getLogger(SearchSteps.class.getName());
 
 	UserActions User;
 	Hashtable<String,String> Data;
@@ -28,7 +25,7 @@ public class SearchSteps {
 		
 		//assertEquals(true, User.isDisplayed(LoginPage.UserName));
 		//assertEquals(true, User.isDisplayed(LoginPage.Password));
-		Log.info("Username and Password are displayed as expected");
+//		Log.info("Username and Password are displayed as expected");
 	}
 
 	@When("^User enters Username : \"([^\"]*)\" , Password : \"([^\"]*)\"$")
@@ -37,7 +34,7 @@ public class SearchSteps {
 		//User.SendKeys(LoginPage.Password,Password);
 		System.out.println("user enters username "+User.getI()+ " "+ User.getBrowserName());
 		
-		Log.info("Username "+Username+"and Password are filled with data ");
+	//	Log.info("Username "+Username+"and Password are filled with data ");
 	}
 
 	@And("^Clicks on the submit button$")
@@ -46,13 +43,13 @@ public class SearchSteps {
 		
 		 // assertEquals(true,User.isEnabled(LoginPage.SubmitButton));
 		  //User.Click(LoginPage.SubmitButton);
-		  Log.info("Clicked on the Submit Button");
+		  //Log.info("Clicked on the Submit Button");
 	}
 
 	@Then("^User Verifies the application is logged in successfully$")
 	public void user_Verifies_the_application_is_logged_in_successfully() throws Throwable {
 		System.out.println("User verifies the application "+User.getI()+ " "+ User.getBrowserName());
-		Log.info("User has logged successfully");
+		//Log.info("User has logged successfully");
 	}
 
 }
