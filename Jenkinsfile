@@ -11,7 +11,7 @@ pipeline {
     stage('Build') {
       agent any
       steps {
-        sh 'mvn compile'
+        bat 'mvn compile'
       }
     }
 
