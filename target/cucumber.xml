@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.426">
+    <testcase classname="Login with Valid Credentials and Logout" name="To Verify the Login with Valid Credentials" time="0.015">
+        <system-out>
+            <![CDATA[Given User Launched "https://parabank.parasoft.com/parabank" in Browser.....passed
+And Application base page is displayed with Login Username and Password Fields.passed
+When User enters Username : "goutham" , Password : "9876543210".............passed
+And Clicks on the submit button.............................................passed
+Then User Verifies the application is logged in successfully................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

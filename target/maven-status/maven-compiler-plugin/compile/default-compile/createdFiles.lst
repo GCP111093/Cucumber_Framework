@@ -1,0 +1,6 @@
+com\manager\EventHandler.class
+com\manager\ExtentManager.class
+com\manager\TestData.class
+com\enumerations\BrowserType.class
+com\manager\DriverManager$1.class
+com\manager\DriverManager.class

@@ -1,0 +1,158 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-08T12:35:26.199Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2934700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cucumber.helper.Hooks.beforeChrome()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "To Verify the Login with Valid Credentials",
+        "description": "",
+        "id": "login-with-valid-credentials-and-logout;to-verify-the-login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1956900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cucumber.helper.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1013000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Launched \"https://parabank.parasoft.com/parabank\" in Browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://parabank.parasoft.com/parabank",
+                  "offset": 15
+                }
+              ],
+              "location": "com.cucumber.stepdefinitions.LoginSteps.user_Launched_in_Browser(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 972000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Application base page is displayed with Login Username and Password Fields",
+            "match": {
+              "location": "com.cucumber.stepdefinitions.SearchSteps.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters Username : \"goutham\" , Password : \"9876543210\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "goutham",
+                  "offset": 24
+                },
+                {
+                  "val": "9876543210",
+                  "offset": 47
+                }
+              ],
+              "location": "com.cucumber.stepdefinitions.SearchSteps.user_enters_Username_Password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Clicks on the submit button",
+            "match": {
+              "location": "com.cucumber.stepdefinitions.SearchSteps.clicks_on_the_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Verifies the application is logged in successfully",
+            "match": {
+              "location": "com.cucumber.stepdefinitions.SearchSteps.user_Verifies_the_application_is_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@chrome"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login with Valid Credentials and Logout",
+    "description": "  To Check application is allowing user to perform login with valid credentials and logout from the application",
+    "id": "login-with-valid-credentials-and-logout",
+    "keyword": "Feature",
+    "uri": "classpath:features//web/chrome/Web_Sample.feature",
+    "tags": [
+      {
+        "name": "@web",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
+      },
+      {
+        "name": "@chrome",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 18
+        }
+      }
+    ]
+  }
+]
