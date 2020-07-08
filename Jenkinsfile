@@ -4,7 +4,7 @@ pipeline {
     stage('Initiatlize') {
       agent any
       steps {
-        echo 'Loaded Git Project'
+        git(url: 'https://github.com/GCP111093/Cucumber_Framework.git', branch: 'CICD')
       }
     }
 
