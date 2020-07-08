@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        bat '${MAVEN_HOME}/mvn clean'
+        bat 'mvn clean'
       }
     }
 
