@@ -11,7 +11,7 @@ pipeline {
     stage('Build') {
       agent any
       steps {
-        sh '${MAVEN_HOME}/mvn compile'
+        sh 'mvn compile'
       }
     }
 
