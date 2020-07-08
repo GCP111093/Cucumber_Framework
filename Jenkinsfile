@@ -11,7 +11,7 @@ pipeline {
     stage('Build') {
       agent any
       steps {
-        git(url: 'https://github.com/GCP111093/Cucumber_Framework.git', branch: 'CICD', changelog: true, credentialsId: 'gcp111093')
+        sh '${MAVEN_HOME}/mvn compile'
       }
     }
 
