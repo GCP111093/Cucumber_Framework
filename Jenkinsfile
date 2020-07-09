@@ -9,7 +9,7 @@ pipeline {
 
     stage('Sanity API') {
       steps {
-        bat 'sanity-api.bat'
+        bat(script: 'Executor.bat "-Ddataproviderthreadcount=1" "-Dcucumber.filter.tags=@sanity and @regression" "-Dcucumber.plugin=junit:/target/sanity.xml"', returnStatus: true, returnStdout: true)
       }
     }
 
