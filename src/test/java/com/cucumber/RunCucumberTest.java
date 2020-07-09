@@ -18,7 +18,7 @@ import io.cucumber.testng.CucumberOptions;
 		strict = true,
 		monochrome = true,
 		dryRun = false,
-		plugin = {"pretty","json:target/cucumber.json","junit:target/cucumber.xml","rerun:target/rerun.txt"}
+		plugin = {"pretty","json:target/cucumber.json","rerun:target/rerun.txt"}
 		
 		)
 //plugin = {"pretty","html:target/reports/normal",
