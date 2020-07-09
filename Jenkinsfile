@@ -15,7 +15,7 @@ pipeline {
 
     stage('Report') {
       steps {
-        junit '/target/*.xml'
+        junit(testResults: '/target/*.xml', healthScaleFactor: 70, keepLongStdio: true)
       }
     }
 
