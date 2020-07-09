@@ -15,7 +15,7 @@ pipeline {
 
     stage('Report') {
       steps {
-        realtimeJUnit(testResults: '/target/*.xml')
+        junit '/target/*.xml'
       }
     }
 
