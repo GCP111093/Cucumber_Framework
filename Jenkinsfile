@@ -9,7 +9,7 @@ pipeline {
 
     stage('Sanity API') {
       steps {
-        bat 'Executor.bat "1" "@sanity and @regression"\' "junit:/target/sanity.xml"'
+        bat 'Executor.bat "1" "@sanity and @regression" "junit:/target/sanity.xml"'
       }
     }
 
