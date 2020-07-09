@@ -15,7 +15,7 @@ pipeline {
 
     stage('Report') {
       steps {
-        junit 'c:/target/*.xml'
+        junit 'C:\\target\\*.xml'
       }
     }
 
